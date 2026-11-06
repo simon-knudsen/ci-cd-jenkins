@@ -1,6 +1,6 @@
-  /*
+
 def gv
-*/
+
 
 pipeline {
     agent any
@@ -24,7 +24,7 @@ pipeline {
             }
 
             */
-        }
+        
         stage('build app') {
             steps {
                 script {
@@ -52,6 +52,9 @@ pipeline {
                 }
             }
         }
+    }
+}
+
 
         /*
         stage('commit version update'){
