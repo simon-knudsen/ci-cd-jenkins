@@ -7,6 +7,8 @@
 - Started Jenkins as a Docker container and exposed its web interface.
 - Completed the initial Jenkins setup and prepared it for creating build jobs.
 
+---
+
 # 2. Create a CIPipeline with Jenkinsfile (Freestyle, Pipeline, Multibranch Pipeline)
 
 ## Technologies used
