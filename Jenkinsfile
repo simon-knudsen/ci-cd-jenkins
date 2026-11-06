@@ -1,4 +1,6 @@
+  /*
 def gv
+*/
 
 pipeline {
     agent any
@@ -6,6 +8,8 @@ pipeline {
         maven 'maven-3.10'
     }
     stages {
+
+         /*
         stage('increment version') {
             steps {
                 script {
@@ -18,6 +22,8 @@ pipeline {
                     env.IMAGE_NAME = "$version-$BUILD_NUMBER"
                 }
             }
+
+            */
         }
         stage('build app') {
             steps {
@@ -32,9 +38,9 @@ pipeline {
                 script {
                     echo "building the docker image..."
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PASS', usernameVariable: 'USER')]){
-                        sh "docker build -t simonknudsen7/demo-app:${IMAGE_NAME} ."
+                        sh "docker build -t simonknudsen7/demo-app:jma-2.0 ."
                         sh 'echo $PASS | docker login -u $USER --password-stdin'
-                        sh "docker push simonknudsen7/demo-app:${IMAGE_NAME}"
+                        sh "docker push simonknudsen7/demo-app:jma-2.0"
                     }
                 }
             }
@@ -46,6 +52,8 @@ pipeline {
                 }
             }
         }
+
+        /*
         stage('commit version update'){
             steps {
                 script {
@@ -67,3 +75,4 @@ pipeline {
          }
         }
     }
+    */
