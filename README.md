@@ -40,12 +40,23 @@ _Jenkins job running the configured build commands._
 ## Build image
 
 ![Build-image stage](images/build-image.png)
-*Build-image stage added to the CI flow.*
+_Build-image stage added to the CI flow._
 
 ![Docker image build output](images/image-built.png)
-*Docker image built successfully.*
+_Docker image built successfully._
 
 ![Docker image verification](images/image-verification.png)
-*Created Docker image verified locally.*
+_Created Docker image verified locally._
+
+<br>
 
 ## Push to private docker repository
+
+![Push-to-repository stage](images/push-to-repository.png)
+_Push-to-repository stage added to the CI flow._
+
+![Successful Docker push](images/success-push.png)
+_Docker image pushed successfully to the private repository._
+
+![Docker Hub repository](images/image-in-dockerhub.png)
+_Published image available in Docker Hub._
