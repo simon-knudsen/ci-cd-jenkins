@@ -49,8 +49,12 @@
 ![CI pipeline flow](images/CleanShot%202026-11-06%20at%2010.00.17.png)
 _CI flow: checkout, test, and build the JAR._
 
+<br>
+
 ![Successful Maven build](images/build-success.png)
 _Successful Maven test and package build._
+
+<br>
 
 ![Jenkins job output](images/commands-executed.png)
 _Jenkins job running the configured build commands._
