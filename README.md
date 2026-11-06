@@ -50,7 +50,7 @@ _Created Docker image verified locally._
 
 <br>
 
-## Push to private docker repository
+## Push to private Docker repository
 
 ![Push-to-repository stage](images/push-to-repository.png)
 _Push-to-repository stage added to the CI flow._
@@ -60,3 +60,13 @@ _Docker image pushed successfully to the private repository._
 
 ![Docker Hub repository](images/image-in-dockerhub.png)
 _Published image available in Docker Hub._
+
+<br>
+
+## Push to Nexus repository
+
+![Successful Nexus push](images/push-to-nexus.png)
+_Docker image pushed successfully to the Nexus repository._
+
+![Nexus repository image](images/nexus-image.png)
+_Published Java Maven image available in Nexus._
