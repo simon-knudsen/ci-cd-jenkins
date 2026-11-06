@@ -23,7 +23,11 @@
 
 <br>
 
-## Build Jar File
+## Freestyle pipeline
+
+<br>
+
+### Build Jar File
 
 <br>
 
@@ -37,7 +41,7 @@ _Jenkins job running the configured build commands._
 
 <br>
 
-## Build image
+### Build image
 
 ![Build-image stage](images/build-image.png)
 _Build-image stage added to the CI flow._
@@ -54,7 +58,7 @@ _Created Docker image verified locally._
 
 <br>
 
-## Push to private Docker repository
+### Push to private Docker repository
 
 ![Push-to-repository stage](images/push-to-repository.png)
 _Push-to-repository stage added to the CI flow._
@@ -71,7 +75,7 @@ _Published image available in Docker Hub._
 
 <br>
 
-## Push to Nexus repository
+### Push to Nexus repository
 
 ![Successful Nexus push](images/push-to-nexus.png)
 _Docker image pushed successfully to the Nexus repository._
@@ -82,3 +86,10 @@ _Docker image pushed successfully to the Nexus repository._
 _Published Java Maven image available in Nexus._
 
 <br>
+
+## Pipeline
+
+The freestyle build steps were replaced with a declarative Jenkins pipeline, which keeps the CI flow defined as code. The pipeline checks out the source code, installs the required tools, and then runs the build app, build image, and deploy stages.
+
+![Completed Jenkins pipeline](images/pipeline-completed-1.png)
+_Jenkins Stage View showing a successful `my-pipeline` run, with all stages completed._
