@@ -7,7 +7,7 @@
 - Started Jenkins as a Docker container and exposed its web interface.
 - Completed the initial Jenkins setup and prepared it for creating build jobs.
 
----
+<br>
 
 # 2. Create a CIPipeline with Jenkinsfile (Freestyle, Pipeline, Multibranch Pipeline)
 
@@ -21,6 +21,8 @@
 - Java
 - Maven
 
+<br>
+
 ## Steps completed
 
 - Created CI jobs in Jenkins using Freestyle, Pipeline, and Multibranch Pipeline job types.
@@ -33,6 +35,8 @@
 - Built a Docker image containing the generated application JAR.
 - Tagged and pushed the image to a private Docker Hub repository.
 
+<br>
+
 ### Pipeline stages
 
 - **Initialize:** Load the shared pipeline script used by the Jenkinsfile.
@@ -40,13 +44,15 @@
 - **Build image:** Build the Docker image and authenticate with Docker Hub using Jenkins credentials.
 - **Deploy:** Keep a deployment stage ready for the next delivery step.
 
-### Pipeline evidence
+<br>
 
 ![CI pipeline flow](images/CleanShot%202026-11-06%20at%2010.00.17.png)
-*CI flow: checkout, test, and build the JAR.*
+_CI flow: checkout, test, and build the JAR._
 
 ![Successful Maven build](images/build-success.png)
-*Successful Maven test and package build.*
+_Successful Maven test and package build._
 
 ![Jenkins job output](images/commands-executed.png)
-*Jenkins job running the configured build commands.*
+_Jenkins job running the configured build commands._
+
+<br>
