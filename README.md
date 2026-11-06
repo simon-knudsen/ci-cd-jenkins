@@ -70,3 +70,5 @@ _Docker image pushed successfully to the Nexus repository._
 
 ![Nexus repository image](images/nexus-image.png)
 _Published Java Maven image available in Nexus._
+
+<br>
