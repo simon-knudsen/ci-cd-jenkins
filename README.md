@@ -39,3 +39,14 @@
 - **Build JAR:** Run Maven to package the Java application.
 - **Build image:** Build the Docker image and authenticate with Docker Hub using Jenkins credentials.
 - **Deploy:** Keep a deployment stage ready for the next delivery step.
+
+### Pipeline evidence
+
+![CI pipeline flow](images/CleanShot%202026-11-06%20at%2010.00.17.png)
+*CI flow: checkout, test, and build the JAR.*
+
+![Successful Maven build](images/build-success.png)
+*Successful Maven test and package build.*
+
+![Jenkins job output](images/commands-executed.png)
+*Jenkins job running the configured build commands.*
