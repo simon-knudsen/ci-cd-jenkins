@@ -93,3 +93,22 @@ The freestyle build steps were replaced with a declarative Jenkins pipeline, whi
 
 ![Completed Jenkins pipeline](images/pipeline-completed-1.png)
 _Jenkins Stage View showing a successful `my-pipeline` run, with all stages completed._
+
+<br>
+
+## Multibranch pipeline
+
+A multibranch pipeline scans the repository and creates a separate job for each branch that contains a Jenkinsfile. The Jenkinsfile uses `when` conditions on `BRANCH_NAME`, so every branch runs the test stage, while the build and deploy stages run only on `master`.
+
+![Multibranch pipeline branches](images/multi-branch-scan.png)
+_Branches discovered by `my-multi-branch-pipeline`, with the latest builds of `jenkins-jobs` and `master` successful._
+
+<br>
+
+![jenkins-jobs branch Stage View](images/jenkins-jobs.png)
+_Build on the `jenkins-jobs` branch, where the build and deploy stages are skipped._
+
+<br>
+
+![master branch Stage View](images/master-branch.png)
+_Build on the `master` branch, where the test, build, and deploy stages all run._
