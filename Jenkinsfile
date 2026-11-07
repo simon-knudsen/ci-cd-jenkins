@@ -9,7 +9,7 @@ def gv
 pipeline {   
     agent any
     tools {
-        maven 'Maven'
+        maven 'maven-3.10'
     }
     stages {
         stage("init") {
