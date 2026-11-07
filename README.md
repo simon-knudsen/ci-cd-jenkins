@@ -132,3 +132,34 @@ _Stage View of the `jenkins-shared-lib` branch in `my-multi-branch-pipeline`, wi
 
 ![Docker image pushed to Docker Hub](images/docker-image-push.png)
 _Image tag `jma-3.0` pushed to the private `simonknudsen7/demo-app` repository on Docker Hub by the pipeline._
+
+<br>
+
+# 4. Configure Webhook to trigger CI Pipeline automatically on every change
+
+<br>
+
+- Install the GitHub plugin in Jenkins
+- Configure the access token and the connection to Jenkins in the GitHub repository settings
+- Configure Jenkins to trigger the CI pipeline whenever a change is pushed to GitHub
+
+<br>
+
+## Pipeline webhook
+
+![GitHub webhook delivery](images/github-webook-setup-pipeline.png)
+_GitHub webhook delivering a `ping` event to Jenkins at `/github-webhook/`, answered with a `200` response._
+
+<br>
+
+![Pipeline triggered by webhook](images/web-hooks-test-pipeline.png)
+_Build #9 of `my-pipeline`, triggered automatically by a pushed commit, with all stages completed._
+
+<br>
+
+## Multibranch pipeline webhook
+
+![Multibranch pipeline triggered by webhook](images/multi-branch-pipeline-test.png)
+_Build #2 of the `feature/update-payment` branch in `my-multi-branch-pipeline`, triggered automatically by a pushed commit._
+
+<br>
