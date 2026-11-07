@@ -4,7 +4,7 @@ pipeline {
         stage("test") {
             steps {
                 script {
-                    echo "Testing the automation...."
+                    echo "Testing the app...."
                 }
             }
         }
