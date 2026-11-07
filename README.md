@@ -115,7 +115,7 @@ _Build on the `master` branch, where the test, build, and deploy stages all run.
 
 <br>
 
-# 2. Create a Jenkins Shared Library
+# 3. Create a Jenkins Shared Library
 
 Create a Jenkins Shared Library to extract common build logic:
 
