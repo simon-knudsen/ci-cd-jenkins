@@ -112,3 +112,23 @@ _Build on the `jenkins-jobs` branch, where the build and deploy stages are skipp
 
 ![master branch Stage View](images/master-branch.png)
 _Build on the `master` branch, where the test, build, and deploy stages all run._
+
+<br>
+
+# 2. Create a Jenkins Shared Library
+
+Create a Jenkins Shared Library to extract common build logic:
+
+- Create separate Git repository for Jenkins Shared Library project
+- Create functions in the JSL to use in the Jenkins pipeline
+- Integrate and use the JSL in Jenkins Pipeline (globally and for a specific project in Jenkinsfile)
+
+<br>
+
+![Jenkins Shared Library pipeline](images/jenkins-shared-lib-pipeline.png)
+_Stage View of the `jenkins-shared-lib` branch in `my-multi-branch-pipeline`, with build #3 completing all stages._
+
+<br>
+
+![Docker image pushed to Docker Hub](images/docker-image-push.png)
+_Image tag `jma-3.0` pushed to the private `simonknudsen7/demo-app` repository on Docker Hub by the pipeline._
